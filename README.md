@@ -54,7 +54,7 @@ We will be gathering the required data by querying a database using SQL. Each of
 
 * The second task we need to complete compile a list of all the current employees eligible for a mentorship program. This one is a little more straight-forward. All we have to do is adjust or original query birthdate range and add a second filter, to filter out employees no longer employed.
 
-   1. Refactor the original query. We will adjust the birthdate to include employees born in 1965. We then filter those to only include employees still employed by Pewlett-Hackard by filtering the to_date = 9999-01-01. This will result in a table holding information about all of the employees currently employed by Pewlett-Hackard, born in 1965.
+   1. Refactor the original query. We will adjust the birthdate to include employees born in 1965. We then filter those to only include employees still employed by Pewlett-Hackard by filtering the to_date = 9999-01-01. This will result in a table holding information about all of the employees currently employed by Pewlett-Hackard, born in 1965, and their most recent titles.
 
         ![mentor_elig](code_screenshots/mentorship_elei.png)
 
@@ -75,6 +75,6 @@ We will be gathering the required data by querying a database using SQL. Each of
 
     ![eligible_mentors](code_screenshots/mentor_title_count.png)
 
-    Comparing this table to the more accurate retirement table, you can see that in a worst case scenario, where all of the retirement eligible employees quit at the same time, the eligible mentors could take on new hires at around a 3:1, or 4:1 ratio, depending on the title needing filled. This, however, is highly unlikely to occur, and with the given mentors, Pewlett-Hackard should have more than enough mentors to guide any new hires.
+    Comparing this table to the more accurate retirement table, you can see that in a worst case scenario, where all of the retirement eligible employees quit at the same time, the eligible mentors could take on new hires at around a 2:1 to 3:1 ratio for senior staff and senior engineers. The ratios then jump quite drastically to around 14:1 for engineers, 13:1 for staff, 20:1 for technique leaders, and finally 8:1 for assistant engineers. This, however, is highly unlikely to occur, and with the given mentors, Pewlett-Hackard should have more than enough mentors to guide any new hires.
   
 
